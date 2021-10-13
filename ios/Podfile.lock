@@ -67,6 +67,9 @@ PODS:
     - DoubleConversion
     - glog
   - glog (0.3.5)
+  - GoogleAds-IMA-iOS-SDK (3.11.3)
+  - iOS-Client-SDK (1.1.32):
+    - GoogleAds-IMA-iOS-SDK (= 3.11.3)
   - OpenSSL-Universal (1.0.2.20):
     - OpenSSL-Universal/Static (= 1.0.2.20)
   - OpenSSL-Universal/Static (1.0.2.20)
@@ -299,6 +302,11 @@ PODS:
   - Yoga (1.14.0)
   - YogaKit (1.18.1):
     - Yoga (~> 1.14)
+  - ZiggeoRN (1.4.3):
+    - iOS-Client-SDK
+    - React-Core
+  - ZiggeoSwiftSDK (1.1.32):
+    - GoogleAds-IMA-iOS-SDK (= 3.11.3)
 
 DEPENDENCIES:
   - DoubleConversion (from `../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec`)
@@ -325,6 +333,7 @@ DEPENDENCIES:
   - FlipperKit/SKIOSNetworkPlugin (~> 0.54.0)
   - Folly (from `../node_modules/react-native/third-party-podspecs/Folly.podspec`)
   - glog (from `../node_modules/react-native/third-party-podspecs/glog.podspec`)
+  - iOS-Client-SDK (from `https://github.com/Ziggeo/iOS-Client-SDK.git`)
   - RCTRequired (from `../node_modules/react-native/Libraries/RCTRequired`)
   - RCTTypeSafety (from `../node_modules/react-native/Libraries/TypeSafety`)
   - React (from `../node_modules/react-native/`)
@@ -348,6 +357,8 @@ DEPENDENCIES:
   - React-RCTVibration (from `../node_modules/react-native/Libraries/Vibration`)
   - ReactCommon/turbomodule/core (from `../node_modules/react-native/ReactCommon`)
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
+  - ZiggeoRN (from `../node_modules/react-native-ziggeo-library`)
+  - ZiggeoSwiftSDK (from `https://github.com/Ziggeo/Swift-Client-SDK.git`)
 
 SPEC REPOS:
   trunk:
@@ -361,6 +372,7 @@ SPEC REPOS:
     - Flipper-PeerTalk
     - Flipper-RSocket
     - FlipperKit
+    - GoogleAds-IMA-iOS-SDK
     - OpenSSL-Universal
     - YogaKit
 
@@ -375,6 +387,8 @@ EXTERNAL SOURCES:
     :podspec: "../node_modules/react-native/third-party-podspecs/Folly.podspec"
   glog:
     :podspec: "../node_modules/react-native/third-party-podspecs/glog.podspec"
+  iOS-Client-SDK:
+    :git: https://github.com/Ziggeo/iOS-Client-SDK.git
   RCTRequired:
     :path: "../node_modules/react-native/Libraries/RCTRequired"
   RCTTypeSafety:
@@ -417,6 +431,18 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon"
   Yoga:
     :path: "../node_modules/react-native/ReactCommon/yoga"
+  ZiggeoRN:
+    :path: "../node_modules/react-native-ziggeo-library"
+  ZiggeoSwiftSDK:
+    :git: https://github.com/Ziggeo/Swift-Client-SDK.git
+
+CHECKOUT OPTIONS:
+  iOS-Client-SDK:
+    :commit: e25cad90b9743b50c82e412e78cd637006a482ce
+    :git: https://github.com/Ziggeo/iOS-Client-SDK.git
+  ZiggeoSwiftSDK:
+    :commit: c1a49cdd1fe02165d80fd8b3403d73d84ccddf5d
+    :git: https://github.com/Ziggeo/Swift-Client-SDK.git
 
 SPEC CHECKSUMS:
   boost-for-react-native: 39c7adb57c4e60d6c5479dd8623128eb5b3f0f2c
@@ -434,6 +460,8 @@ SPEC CHECKSUMS:
   FlipperKit: ab353d41aea8aae2ea6daaf813e67496642f3d7d
   Folly: b73c3869541e86821df3c387eb0af5f65addfab4
   glog: 40a13f7840415b9a77023fbcae0f1e6f43192af3
+  GoogleAds-IMA-iOS-SDK: 134b35758455576aaa6b3d2d3146699dcf8af4f1
+  iOS-Client-SDK: e740124f60fab16f084cbafa0dc95cad5cd215f6
   OpenSSL-Universal: ff34003318d5e1163e9529b08470708e389ffcdd
   RCTRequired: 48884c74035a0b5b76dbb7a998bd93bcfc5f2047
   RCTTypeSafety: edf4b618033c2f1c5b7bc3d90d8e085ed95ba2ab
@@ -457,7 +485,9 @@ SPEC CHECKSUMS:
   ReactCommon: 4167844018c9ed375cc01a843e9ee564399e53c3
   Yoga: 7d13633d129fd179e01b8953d38d47be90db185a
   YogaKit: f782866e155069a2cca2517aafea43200b01fd5a
+  ZiggeoRN: f4db8a0ccde6f1ee509e1134efd43caa80a61768
+  ZiggeoSwiftSDK: b2c8c2bbbfa5a1ff121793495c7f78f975521fb9
 
-PODFILE CHECKSUM: 0f382e63c72b0f4d21c43f407811e909cee22d19
+PODFILE CHECKSUM: ba277ba981bdaff72250c93e82062bea2d44447b
 
 COCOAPODS: 1.10.0
